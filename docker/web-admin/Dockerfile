@@ -8,8 +8,6 @@ WORKDIR /var/www/app
 RUN npm install create-next-app
 
 SHELL ["/bin/zsh", "-c"]
-COPY ./.zshrc /root/.zshrc
-COPY ./build-script.sh /root/build-script.sh
 
 # ENV NODE_OPTIONS=--openssl-legacy-provider
 

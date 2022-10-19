@@ -1,18 +1,5 @@
 version: "3"
 services:
-    cli:
-        build: ../
-        tty: true
-        volumes:
-            - ../cli:/var/www/cli
-        container_name: cli
-        ports:
-            - "3002:3002"
-        depends_on:
-          - "app"
-        networks:
-          - sail
-
     web-admin:
         build: ./web-admin/
         tty: true

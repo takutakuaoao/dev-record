@@ -8,8 +8,6 @@ WORKDIR /var/www/app
 RUN npm install create-next-app
 
 SHELL ["/bin/zsh", "-c"]
-COPY ./.zshrc /root/.zshrc
-COPY ./build-script.sh /root/build-script.sh
 
 # ログインシェルの指定
 CMD ["/bin/zsh"]
